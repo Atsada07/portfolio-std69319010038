@@ -1,50 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Atsada Sanghan</title>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
-    <header>
-        <h1>Atsada Sanghan</h1>
-        <p>Information Technology Student | Web Developer</p>
+    <!-- ================= HEADER & NAVIGATION ================= -->
+    <header class="top-header">
+        <div class="header-container">
+            <h1 class="logo">Atsada Sanghan</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="other.html">เพิ่มเติม</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- ================= NAVIGATION ================= -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
     <!-- ================= MAIN ================= -->
-    <main>
-        <section>
+    <main class="main-content">
+
+        <!-- Header Title -->
+        <div class="profile-section">
+            <h1 style="color: #1b365d; margin-bottom: 5px;">Contact Me</h1>
+            <p class="subtitle">ช่องทางการติดต่อและสถานที่ตั้ง</p>
+        </div>
+
+        <!-- Contact Info Card -->
+        <section class="card">
             <h2>Contact Information</h2>
-            <p><strong>Name:</strong> Atsada Sanghan (อัษฎา แสงหาร)</p>
-            <p><strong>Student ID:</strong> 69319010038</p>
-            <p><strong>Email:</strong> <a href="mailto:s69319010038@kktech.ac.th">s69319010038@kktech.ac.th</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/Atsada07/protfolio-std69319010038.git" target="_blank">Atsada07 GitHub</a></p>
+            <div style="line-height: 2.2; text-align: left;">
+                <p><strong>Name:</strong> Atsada Sanghan (อัษฎา แสงหาร)</p>
+                <p><strong>Student ID:</strong> 69319010038</p>
+                <p><strong>Email:</strong> <a href="mailto:s69319010038@kktech.ac.th" style="color: #3498db;">s69319010038@kktech.ac.th</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Atsada07/protfolio-std69319010038.git" target="_blank" style="color: #3498db;">Atsada07 GitHub</a></p>
+            </div>
         </section>
+
+        <!-- Google Maps Card -->
+        <section class="card">
+            <h2>ตำแหน่งที่ตั้ง (My Location)</h2>
+            <div style="position: relative; padding-bottom: 60%; height: 0; overflow: hidden; border-radius: 8px; margin-top: 15px;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27276.73076630038!2d102.8297831088847!3d16.417874226948058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sth!2sth!4v1787560063477!5m2!1sth!2sth" 
+                    style="position: absolute; top:0; left:0; width:100%; height:100%; border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+        </section>
+
     </main>
 
     <!-- ================= FOOTER ================= -->
-    <footer>
+    <footer class="main-footer">
         <p>© 2026 Atsada Sanghan. All rights reserved.</p>
     </footer>
 
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

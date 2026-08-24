@@ -1,109 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Atsada Sanghan - Portfolio</title>
-
+    
+    <!-- เชื่อมต่อไฟล์ CSS ที่ตกแต่งแล้ว -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- ฟอนต์ Google Kanit -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
- <!-- ================= HEADER ================= -->
-
-    <header>
-
-        <h1>Atsada Sanghan</h1>
-
-        <!-- เปลี่ยนข้อความระบุตัวตนใหม่ตรงนี้ -->
-        <p>Information Technology Student | Web Developer</p>
-
+    <!-- แถบด้านบนและเมนู -->
+    <header class="top-header">
+        <div class="header-container">
+            <h1 class="logo">Atsada Sanghan</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="other.html">เพิ่มเติม</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- ================= NAVIGATION ================= -->
+    <!-- ส่วนเนื้อหาหลัก -->
+    <main class="main-content">
+        
+        <!-- รูปโปรไฟล์กลางหน้า -->
+        <div class="profile-section">
+            <div class="avatar-box">
+                <!-- เปลี่ยนใส่พาธรูปของคุณได้ เช่น src="images/profile.jpg" -->
+                <img src="images/istockphoto-824860820-1024x1024.jpg" alt="รูปโปรไฟล์ อัษฎา แสงหาร">
+            </div>
+            <p class="subtitle">Information Technology Student | Web Developer</p>
+        </div>
 
-    <nav>
-
-        <ul>
-
-            <li><a href="index.html">Home</a></li>
-
-            <li><a href="about.html">About</a></li>
-
-            <li><a href="skills.html">Skills</a></li>
-
-            <li><a href="gallery.html">Gallery</a></li>
-
-            <li><a href="contact.html">Contact</a></li>
-
-        </ul>
-
-    </nav>
-
-    <!-- ================= MAIN ================= -->
-
-    <main>
-
-        <!-- เพิ่มส่วนแนะนำตัว (Intro Section) -->
-        <section>
-
+        <!-- การ์ดต้อนรับ -->
+        <section class="card intro-card">
             <h2>Welcome to My Portfolio</h2>
-
             <p>
-                ยินดีต้อนรับสู่พอร์ตโฟลิโอของ อัษฎา แสงหาร นักศึกษาสาขาเทคโนโลยีสารสนเทศ 
+                ยินดีต้อนรับสู่พอร์ตโฟลิโอของ <strong>อัษฎา แสงหาร</strong> นักศึกษาสาขาเทคโนโลยีสารสนเทศ 
                 เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมผลงาน ทักษะ และช่องทางการติดต่อครับ
             </p>
-
         </section>
 
-      <section>
-
+        <!-- การ์ดปุ่มกด Quick Links -->
+        <section class="card links-card">
             <h2>Quick Links</h2>
-
-            <ul>
-
-                <li><a href="about.html">About Me</a></li>
-
-                <li>
-                    <!-- แก้ไขแท็ก <a> ใส่ target="_blank" ให้ถูกต้อง -->
-                    <a href="https://github.com/Atsada07/protfolio-std69319010038.git" target="_blank">
-                        Visit GitHub
-                    </a>
-                </li>
-
-                <li>
-                    <a href="mailto:s69319010038@kktech.ac.th">
-                        Send Email
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact.html">
-                        Contact Me
-                    </a>
-                </li>
-
-            </ul>
-
+            <div class="btn-grid">
+                <a href="about.html" class="btn btn-about">About Me</a>
+                <a href="https://github.com/Atsada07/protfolio-std69319010038.git" target="_blank" class="btn btn-github">Visit GitHub</a>
+                <a href="mailto:s69319010038@kktech.ac.th" class="btn btn-email">Send Email</a>
+                <a href="contact.html" class="btn btn-contact">Contact Me</a>
+            </div>
         </section>
+
     </main>
 
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        <p>
-            © 2026 Atsada Sanghan. All rights reserved.
-        </p>
-
+    <!-- ส่วนท้ายเว็บ -->
+    <footer class="main-footer">
+        <p>© 2026 Atsada Sanghan. All rights reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
-
 </body>
-
 </html>

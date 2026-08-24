@@ -1,61 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills - Atsada Sanghan</title>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
-    <header>
-        <h1>Atsada Sanghan</h1>
-        <p>Information Technology Student | Web Developer</p>
+    <!-- ================= HEADER & NAVIGATION ================= -->
+    <header class="top-header">
+        <div class="header-container">
+            <h1 class="logo">Atsada Sanghan</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html" class="active">Skills</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="other.html">เพิ่มเติม</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- ================= NAVIGATION ================= -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
     <!-- ================= MAIN ================= -->
-    <main>
-        <section>
-            <h2>My Technical Skills</h2>
-            <ul>
-                <li>HTML5 / CSS3 / JavaScript</li>
-                <li>Responsive Web Design</li>
-                <li>Git & GitHub (Version Control)</li>
-                <li>UI/UX Basics & Design Tools</li>
+    <main class="main-content">
+
+        <!-- Header Title -->
+        <div class="profile-section">
+            <h1 style="color: #1b365d; margin-bottom: 5px;">My Skills</h1>
+            <p class="subtitle">ทักษะและความสามารถทางด้านเทคโนโลยี</p>
+        </div>
+
+        <!-- 1. Technical Skills -->
+        <section class="card">
+            <h2>Technical Skills</h2>
+            <ul style="list-style: none; padding: 0; line-height: 2.2; text-align: left;">
+                <li style="border-bottom: 1px solid #f0f0f0; padding: 8px 0;">⚡ <strong>HTML5 / CSS3 / JavaScript</strong></li>
+                <li style="border-bottom: 1px solid #f0f0f0; padding: 8px 0;">📱 <strong>Responsive Web Design</strong></li>
+                <li style="border-bottom: 1px solid #f0f0f0; padding: 8px 0;">🛠️ <strong>Git & GitHub</strong> (Version Control)</li>
+                <li style="padding: 8px 0;">🎨 <strong>UI/UX Basics & Design Tools</strong></li>
             </ul>
         </section>
 
-        <section>
+        <!-- 2. Soft Skills -->
+        <section class="card">
             <h2>Soft Skills</h2>
-            <ul>
-                <li>Problem Solving (การแก้ปัญหาเฉพาะหน้า)</li>
-                <li>Teamwork & Communication (การทำงานร่วมกับผู้อื่น)</li>
-                <li>Continuous Learning (การเรียนรู้สิ่งใหม่ๆ)</li>
+            <ul style="list-style: none; padding: 0; line-height: 2.2; text-align: left;">
+                <li style="border-bottom: 1px solid #f0f0f0; padding: 8px 0;">💡 <strong>Problem Solving:</strong> การแก้ปัญหาเฉพาะหน้า</li>
+                <li style="border-bottom: 1px solid #f0f0f0; padding: 8px 0;">🤝 <strong>Teamwork & Communication:</strong> การทำงานร่วมกับผู้อื่น</li>
+                <li style="padding: 8px 0;">🚀 <strong>Continuous Learning:</strong> การเรียนรู้สิ่งใหม่ๆ อยู่เสมอ</li>
             </ul>
         </section>
+
     </main>
 
     <!-- ================= FOOTER ================= -->
-    <footer>
+    <footer class="main-footer">
         <p>© 2026 Atsada Sanghan. All rights reserved.</p>
     </footer>
 
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

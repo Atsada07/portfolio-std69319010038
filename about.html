@@ -1,63 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Atsada Sanghan</title>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
-    <header>
-        <h1>Atsada Sanghan</h1>
-        <p>Information Technology Student | Web Developer</p>
+    <!-- ================= HEADER & NAVIGATION ================= -->
+    <header class="top-header">
+        <div class="header-container">
+            <h1 class="logo">Atsada Sanghan</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="other.html">เพิ่มเติม</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- ================= NAVIGATION ================= -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
     <!-- ================= MAIN ================= -->
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>
+    <main class="main-content">
+
+        <!-- ส่วนหัวข้อหน้า -->
+        <div class="profile-section">
+            <h1 style="color: #1b365d; margin-bottom: 5px;">About Me</h1>
+            <p class="subtitle">Information Technology Student | Web Developer</p>
+        </div>
+
+        <!-- การ์ดแนะนำตัว -->
+        <section class="card">
+            <h2>ประวัติส่วนตัว</h2>
+            <p style="text-align: left; margin-bottom: 12px; text-indent: 1.5em;">
                 สวัสดีครับ ผมชื่อ <strong>อัษฎา แสงหาร (Atsada Sanghan)</strong> รหัสนักศึกษา <strong>69319010038</strong> 
                 กำลังศึกษาในสาขาวิชาเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคขอนแก่น
             </p>
-            <p>
+            <p style="text-align: left; text-indent: 1.5em;">
                 มีความสนใจในการพัฒนาเว็บไซต์ (Web Development) การออกแบบ UI/UX และเทคโนโลยีใหม่ๆ 
                 กำลังตั้งใจศึกษาและพัฒนาทักษะการเขียนโค้ดอย่างต่อเนื่องครับ
             </p>
         </section>
 
-        <section>
+        <!-- การ์ดประวัติการศึกษา -->
+        <section class="card">
             <h2>Education</h2>
-            <ul>
+            <ul style="list-style: none; padding: 0; line-height: 2; text-align: left;">
                 <li><strong>ระดับการศึกษา:</strong> ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) / ปริญญาตรี</li>
                 <li><strong>สาขาวิชา:</strong> เทคโนโลยีสารสนเทศ (Information Technology)</li>
                 <li><strong>สถานศึกษา:</strong> วิทยาลัยเทคนิคขอนแก่น</li>
             </ul>
         </section>
+
     </main>
 
     <!-- ================= FOOTER ================= -->
-    <footer>
+    <footer class="main-footer">
         <p>© 2026 Atsada Sanghan. All rights reserved.</p>
     </footer>
 
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
